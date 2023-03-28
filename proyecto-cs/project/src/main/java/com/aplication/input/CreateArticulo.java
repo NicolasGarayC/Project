@@ -1,6 +1,7 @@
-package com.proj.project.articulo;
+package com.aplication.input;
 
-public class Articulo {
+
+public class CreateArticulo {
     private String codigo_articulo;
     private String nombre_articulo;
     private String marca;
@@ -10,9 +11,9 @@ public class Articulo {
     private int stock;
     private int codigo_categoria;
 
-    public Articulo() {
+    public CreateArticulo() {
     }
-    public Articulo(String codigo_articulo, String nombre_articulo, String marca, String modelo, String color, String unidad_medida, int stock, int codigo_categoria) {
+    public CreateArticulo(String codigo_articulo, String nombre_articulo, String marca, String modelo, String color, String unidad_medida, int stock, int codigo_categoria) {
         this.codigo_articulo = codigo_articulo;
         this.nombre_articulo = nombre_articulo;
         this.marca = marca;
@@ -23,7 +24,7 @@ public class Articulo {
         this.codigo_categoria = codigo_categoria;
     }
 
-    public Articulo(String nombre_articulo, String marca, String modelo, String color, String unidad_medida, int stock, int codigo_categoria) {
+    public CreateArticulo(String nombre_articulo, String marca, String modelo, String color, String unidad_medida, int stock, int codigo_categoria) {
         this.nombre_articulo = nombre_articulo;
         this.marca = marca;
         this.modelo = modelo;

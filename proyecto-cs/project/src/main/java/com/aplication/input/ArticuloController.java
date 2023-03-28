@@ -1,4 +1,4 @@
-package com.proj.project.articulo;
+package com.aplication.input;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,9 +10,9 @@ import java.util.List;
 @RequestMapping(path = "api/v1/articulo")
 public class ArticuloController {
     @GetMapping
-    public List<Articulo> getArticulos(){
+    public List<CreateArticulo> getArticulos(){
         return List.of(
-                new Articulo(
+                new CreateArticulo(
                      "m1",
                      "maleta",
                      "targus",

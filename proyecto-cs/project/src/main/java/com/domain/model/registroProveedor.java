@@ -1,8 +1,9 @@
+package com.domain.model;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 @Entity
-public class Proveedor {
+public class registroProveedor {
     
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     
     private String nombre;
@@ -24,11 +25,11 @@ public class Proveedor {
     // getters y setters
     
     // Constructor vacío requerido por JPA
-    public Proveedor() {
+    public registroProveedor() {
     }
     
     // Constructor con parámetros
-    public Proveedor(String nombre, String direccion, String telefono, String correoElectronico, String tipoProducto, int plazoEntrega, int cantidadMinimaPedido, double precioPorUnidad) {
+    public registroProveedor(String nombre, String direccion, String telefono, String correoElectronico, String tipoProducto, int plazoEntrega, int cantidadMinimaPedido, double precioPorUnidad) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
